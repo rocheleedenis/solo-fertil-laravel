@@ -26,4 +26,37 @@ class SoilChemicalAnalysis
     ) {
 
     }
+
+    public function update(
+        float $soilType,
+        float $hydrogenPotential,
+        float $phosphorus,
+        float $potassium,
+        float $calcium,
+        float $magnesium,
+        float $aluminum,
+        float $baseSum,
+        float $effectiveCtc,
+        float $potentialAcidity,
+        float $cationExchangeCapacityAtPh7,
+        float $baseSaturation,
+        float $aluminumSaturation,
+        float $organicMatter,
+    ) : void
+    {
+        $this->soilType = $soilType;
+        $this->hydrogenPotential = $hydrogenPotential;
+        $this->phosphorus = $phosphorus;
+        $this->potassium = $potassium;
+        $this->calcium = $calcium;
+        $this->magnesium = $magnesium;
+        $this->aluminum = $aluminum;
+        $this->baseSum = $baseSum;
+        $this->effectiveCtc = $effectiveCtc;
+        $this->potentialAcidity = $potentialAcidity;
+        $this->cationExchangeCapacityAtPh7 = $cationExchangeCapacityAtPh7;
+        $this->baseSaturation = $baseSaturation;
+        $this->aluminumSaturation = $aluminumSaturation;
+        $this->organicMatter = $organicMatter;
+    }
 }
