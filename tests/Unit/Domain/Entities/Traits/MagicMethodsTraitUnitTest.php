@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\Unit\Domain\Entity\Traits;
+namespace Tests\Unit\Domain\Entities\Traits;
 
-use App\Domain\Entity\Traits\MagicMethodsTrait;
+use App\Domain\Entities\Traits\MagicMethodsTrait;
 use App\Domain\Exceptions\PropertyNotFoundException;
 use Tests\TestCase;
 

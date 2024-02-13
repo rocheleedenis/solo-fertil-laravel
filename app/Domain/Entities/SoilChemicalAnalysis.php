@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domain\Entity;
+namespace App\Domain\Entities;
 
-use App\Domain\Entity\Traits\MagicMethodsTrait;
+use App\Domain\Entities\Traits\MagicMethodsTrait;
 
 class SoilChemicalAnalysis
 {

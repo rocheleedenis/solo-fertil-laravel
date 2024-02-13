@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\Unit\Domain\Entity;
+namespace Tests\Unit\Domain\Entities;
 
-use App\Domain\Entity\SoilChemicalAnalysis;
+use App\Domain\Entities\SoilChemicalAnalysis;
 use Tests\TestCase;
 
 class SoilChemicalAnalysisUnitTest extends TestCase

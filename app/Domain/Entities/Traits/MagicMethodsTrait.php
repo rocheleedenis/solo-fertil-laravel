@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\Entity\Traits;
+namespace App\Domain\Entities\Traits;
 
 use App\Domain\Exceptions\PropertyNotFoundException;
 
