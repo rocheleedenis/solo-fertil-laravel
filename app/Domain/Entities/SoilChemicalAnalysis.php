@@ -9,6 +9,7 @@ class SoilChemicalAnalysis
     use MagicMethodsTrait;
 
     public function __construct(
+        protected $id = '',
         protected float $soilType,
         protected float $hydrogenPotential,
         protected float $phosphorus,
