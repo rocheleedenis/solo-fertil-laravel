@@ -6,4 +6,36 @@ A intenção deste repositŕio é atualizar o projeto original utilizando Larave
 
 ## Instalação
 
-- Rode `docker-compose up -d`
+-   Inicie os containers do projeto
+
+```bash
+docker compose up -d`
+```
+
+-   Entre no container do sistema
+
+```bash
+docker compose exec app bash
+```
+
+-   Instale as dependências
+
+```bash
+composer install
+```
+
+-   Instale as dependências
+
+```bash
+composer install
+```
+
+-   Finalise o start do projeto
+
+```bash
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+```
+
+Abra no seu navegador http://localhost:80
