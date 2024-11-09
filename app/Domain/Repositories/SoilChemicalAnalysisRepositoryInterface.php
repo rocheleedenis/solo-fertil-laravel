@@ -6,5 +6,5 @@ use App\Domain\Entities\SoilChemicalAnalysis;
 
 interface SoilChemicalAnalysisRepositoryInterface
 {
-    public function create(SoilChemicalAnalysis $soulChemicalAnalysis) : SoilChemicalAnalysis;
+    public function create(SoilChemicalAnalysis $soulChemicalAnalysis): SoilChemicalAnalysis;
 }

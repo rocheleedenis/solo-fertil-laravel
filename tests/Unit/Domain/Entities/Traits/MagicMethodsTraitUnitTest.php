@@ -8,7 +8,7 @@ use Tests\TestCase;
 
 class MagicMethodsTraitUnitTest extends TestCase
 {
-    public function testAttributeExists() : void
+    public function testAttributeExists(): void
     {
         $objetc = $this->getObject();
 
@@ -17,7 +17,7 @@ class MagicMethodsTraitUnitTest extends TestCase
         $this->assertEquals('My test', $result);
     }
 
-    public function testAttributeDoesNotExists() : void
+    public function testAttributeDoesNotExists(): void
     {
         $object = $this->getObject();
         $property = 'undefinedProperty';
@@ -28,9 +28,10 @@ class MagicMethodsTraitUnitTest extends TestCase
         $object->{$property};
     }
 
-    private function getObject() : object
+    private function getObject(): object
     {
-        return new class {
+        return new class
+        {
             use MagicMethodsTrait;
 
             private string $attribute = 'My test';

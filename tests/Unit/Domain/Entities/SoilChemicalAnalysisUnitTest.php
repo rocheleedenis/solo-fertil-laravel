@@ -7,7 +7,7 @@ use Tests\TestCase;
 
 class SoilChemicalAnalysisUnitTest extends TestCase
 {
-    public function testAttributes() : void
+    public function testAttributes(): void
     {
         $soilChemicalAnalysis = $this->createSoilChemicalAnalysisObject();
 
@@ -27,7 +27,7 @@ class SoilChemicalAnalysisUnitTest extends TestCase
         $this->assertEquals(10.4, $soilChemicalAnalysis->organicMatter);
     }
 
-    private function createSoilChemicalAnalysisObject() : SoilChemicalAnalysis
+    private function createSoilChemicalAnalysisObject(): SoilChemicalAnalysis
     {
         return new SoilChemicalAnalysis(
             soilType: 1.2,
@@ -47,7 +47,7 @@ class SoilChemicalAnalysisUnitTest extends TestCase
         );
     }
 
-    public function testUpdate() : void
+    public function testUpdate(): void
     {
         $soilChemicalAnalysis = $this->createSoilChemicalAnalysisObject();
 

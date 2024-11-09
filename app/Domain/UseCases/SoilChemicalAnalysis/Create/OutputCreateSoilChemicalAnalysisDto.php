@@ -20,6 +20,5 @@ class OutputCreateSoilChemicalAnalysisDto
         public float $baseSaturation,
         public float $aluminumSaturation,
         public float $organicMatter,
-    ) {
-    }
+    ) {}
 }

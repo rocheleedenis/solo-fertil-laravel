@@ -4,6 +4,4 @@ namespace App\Domain\Exceptions;
 
 use Exception;
 
-class PropertyNotFoundException extends Exception
-{
-}
+class PropertyNotFoundException extends Exception {}

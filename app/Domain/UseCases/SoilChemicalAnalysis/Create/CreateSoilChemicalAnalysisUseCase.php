@@ -4,7 +4,6 @@ namespace App\Domain\UseCases\SoilChemicalAnalysis\Create;
 
 use App\Domain\Entities\SoilChemicalAnalysis;
 use App\Domain\Repositories\SoilChemicalAnalysisRepositoryInterface;
-use App\Domain\UseCases\SoilChemicalAnalysis\Create\OutputCreateSoilChemicalAnalysisDto;
 
 class CreateSoilChemicalAnalysisUseCase
 {
@@ -16,8 +15,7 @@ class CreateSoilChemicalAnalysisUseCase
 
     public function handle(
         InputCreateSoilChemicalAnalysisDto $input
-    ) : OutputCreateSoilChemicalAnalysisDto
-    {
+    ): OutputCreateSoilChemicalAnalysisDto {
         $entity = new SoilChemicalAnalysis(
             null,
             soilType: $input->soilType,

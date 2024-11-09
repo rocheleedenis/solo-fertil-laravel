@@ -3,7 +3,6 @@
 namespace Tests\Unit\Domain\UseCases\SoilChemicalAnalysis;
 
 use App\Domain\Entities\SoilChemicalAnalysis;
-use App\Domain\Repositories\SoilChemicalAnalysisRepository;
 use App\Domain\Repositories\SoilChemicalAnalysisRepositoryInterface;
 use App\Domain\UseCases\SoilChemicalAnalysis\Create\CreateSoilChemicalAnalysisUseCase;
 use App\Domain\UseCases\SoilChemicalAnalysis\Create\InputCreateSoilChemicalAnalysisDto;
@@ -14,7 +13,7 @@ use Tests\TestCase;
 
 class CreateSoilChemicalAnalysisUseCaseUnitTest extends TestCase
 {
-    public function testCreateSoilChemicalAnalysis() : void
+    public function testCreateSoilChemicalAnalysis(): void
     {
         $input = new InputCreateSoilChemicalAnalysisDto(
             soilType: 1.2,

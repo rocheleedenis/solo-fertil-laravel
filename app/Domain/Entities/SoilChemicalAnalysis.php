@@ -9,7 +9,7 @@ class SoilChemicalAnalysis
     use MagicMethodsTrait;
 
     public function __construct(
-        protected $id = '',
+        protected $id,
         protected float $soilType,
         protected float $hydrogenPotential,
         protected float $phosphorus,
@@ -24,9 +24,7 @@ class SoilChemicalAnalysis
         protected float $baseSaturation,
         protected float $aluminumSaturation,
         protected float $organicMatter,
-    ) {
-
-    }
+    ) {}
 
     public function update(
         float $soilType,
@@ -43,8 +41,7 @@ class SoilChemicalAnalysis
         float $baseSaturation,
         float $aluminumSaturation,
         float $organicMatter,
-    ) : void
-    {
+    ): void {
         $this->soilType = $soilType;
         $this->hydrogenPotential = $hydrogenPotential;
         $this->phosphorus = $phosphorus;
