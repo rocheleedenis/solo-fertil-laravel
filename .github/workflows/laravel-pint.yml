@@ -17,7 +17,7 @@ jobs:
           tools: composer:v2
 
       - name: Install Laravel Pint
-        run: composer global install laravel/pint
+        run: composer global require laravel/pint
 
       - name: Run Pint
         run: pint --test
